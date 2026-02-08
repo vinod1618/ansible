@@ -3,9 +3,9 @@
   connection: local
   vars:
     course : "devops with aws"
-    duratio: 120
+    duratio: "120hours"
     trainer: shiva
   tasks: 
   - name: print variables
     ansible.builtin.debug:
-      msg: "course is {{ course }}, trainer is {{ trainer }}"
+      msg: "course is {{ course }} and trainer is {{ trainer }} with {{ duration }} duration"
