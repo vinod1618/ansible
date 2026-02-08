@@ -8,8 +8,8 @@
     trainer: "Shiva"
 
   tasks:
-  - name: Print task-level variables
-  vars:
-      course: "joindevops 88s"
-  ansible.builtin.debug:
-    msg: "Course is {{ course }}, trainer is {{ trainer }}, and duration is {{ duration }}"
+    - name: Print task-level variables
+      vars:
+        course: "joindevops 88s"
+      ansible.builtin.debug:
+        msg: "Course is {{ course }}, trainer is {{ trainer }}, and duration is {{ duration }}"
