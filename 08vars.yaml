@@ -1,0 +1,8 @@
+- name: Play-level variables example
+  hosts: local
+  connection: local
+  
+  tasks:
+    - name: Print task-level variables
+      ansible.builtin.debug:
+        msg: "Course is {{ course }}"
