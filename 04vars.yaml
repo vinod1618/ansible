@@ -6,6 +6,6 @@
     duratio: "120hours"
     trainer: shiva
   tasks: 
-  - name: print variables
-    ansible.builtin.debug:
-      msg: "course is {{ course }} and trainer is {{ trainer }} with {{ duration }} duration"
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "course is {{ course }} and trainer is {{ trainer }} with {{ duration }} duration"
