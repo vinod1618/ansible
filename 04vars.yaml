@@ -1,9 +1,10 @@
 - name: play level variables
   hosts: local
   connection: local
+
   vars:
     course : "devops with aws"
-    duratio: "120hours"
+    duration: "120hours"
     trainer: shiva
   tasks: 
     - name: print variables
