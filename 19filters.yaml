@@ -4,4 +4,4 @@
   tasks:
   - name: first function
     ansible.builtin.debug:
-      msg: "Hi sivakumar, {{ NAME_OF_FUNCTION }}"
+      msg: "Hi sivakumar, {{ NAME_OF_FUNCTION | default(' Good morning ') }}"
