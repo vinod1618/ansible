@@ -7,4 +7,4 @@
   tasks:
   - ansible.builtin.debug:
       msg: "Hello 2"
-    when: IS_LIVE
+    when: false
