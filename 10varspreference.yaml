@@ -5,10 +5,10 @@
     NAME: "vinod from the play level"
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: please enter the name
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: please enter the name
+  #   private: false
   tasks:
   # - vars:
   #     NAME: "vinod from the task level"
