@@ -1,0 +1,7 @@
+- name: filters in the ansible
+  hosts: local
+  connection: local
+  tasks:
+  - name: first function
+    ansible.builtin.debug:
+      msg: "Hi sivakumar, {{ NAME_OF_FUNCTION }}"
