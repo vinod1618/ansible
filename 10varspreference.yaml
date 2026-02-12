@@ -1,8 +1,8 @@
 - name: variable preference test
   hosts: local
   connection: local
-  vars:
-    NAME: "vinod from the play level"
+  # vars:
+  #   NAME: "vinod from the play level"
   # vars_files:
   # - course.yaml
   # vars_prompt:
