@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
-    ansible.builtin.debug:
+  - ansible.builtin.debug:
       msg: "hello1"
   tasks:
-    ansible.builtin.debug:
+  - ansible.builtin.debug:
       msg: "Hello 2"
-    when: false
+    when: IS_LIVE
