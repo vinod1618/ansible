@@ -14,4 +14,4 @@
       NAME: vinod from the task level
     name: checking the preference of the variable by printing it
     ansible.builtin.debug:
-     msg: "{{ NAME }}"
+     msg: " {{ NAME }} "
