@@ -1,0 +1,24 @@
+- name: data types in yaml
+  hosts: local
+  Connection: local
+  vars:
+    program: "devops with aws" #string
+    duration: 140 #int
+    IS_LIVE: true # bool
+    details: # map/dict
+      months: 4
+      trainer: shiva
+    topics: # list
+    - linux
+    - shell
+    - ansible
+  tasks:
+  - name: printing different variables
+    ansible.builtin.debug:
+      msg: |
+        {{ program}}
+        {{ duration }}
+        {{ IS_LIVE }}
+        {{ details }}
+        {{ topics }}
+
