@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: installing package
-    ansible.builtin.packages:
+    ansible.builtin.package:
       name: item
       state: present
     loop:
