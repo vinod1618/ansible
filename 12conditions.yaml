@@ -1,0 +1,12 @@
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  tasks:
+    ansible.builtin.debug:
+      msg: "hello1"
+  tasks:
+    ansible.builtin.debug:
+      msg: "Hello 2"
+  when: false
+
+
