@@ -9,4 +9,4 @@
   - name: checking the condition
     ansible.builtin.debug:
       msg: "the number is less  than 10"
-    when: num<10
+    when: {{ num }}<10
