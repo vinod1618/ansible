@@ -1,0 +1,17 @@
+- name: variable preference test
+  hosts: local
+  connection: local
+  vars:
+    NAME: vinod from the play level
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: please enter the name
+    private: false
+  tasks:
+  - vars:
+      NAME: vinod from the task level
+    name: checking the preference of the variable by printing it
+    ansible.builtin.debug:
+     msg: "{{ NAME }}"
