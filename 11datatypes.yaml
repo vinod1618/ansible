@@ -1,6 +1,6 @@
 - name: data types in yaml
   hosts: local
-  Connection: local
+  Connections: local
   vars:
     program: "devops with aws" #string
     duration: 140 #int
