@@ -6,4 +6,4 @@
       msg: "hello1"
   - ansible.builtin.debug:
       msg: "Hello 2"
-    when: false
+    when: true
