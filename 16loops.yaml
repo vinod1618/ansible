@@ -6,6 +6,6 @@
     ansible.builtin.debug:
       msg: "{{ NAME }}"
     loop:
-      -vinod
-      -suresh
-      -ramesh
+    - vinod
+    - suresh
+    - ramesh
