@@ -8,5 +8,3 @@
     ansible.builtin.debug:
       msg: "Hello 2"
     when: false
-
-
