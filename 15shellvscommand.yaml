@@ -6,3 +6,6 @@
     #ansible.builtin.command: cat /etc/passwd | grep root
     ansible.builtin.shell: cat /etc/passwd | grep root
     register: output
+  - name: print output
+    ansible.builtin.debug:
+     msg: "output is {{ output }}"
