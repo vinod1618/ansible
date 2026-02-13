@@ -3,11 +3,10 @@
   connection: local
   vars:
     topics: linux,shell,ansible
-
   tags:
-    name: ansible
-    project: roboshop
-    duration: 140
+   name: ansible
+   project: roboshop
+   duration: 140
 
   tasks:
   - name: first function
