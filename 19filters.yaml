@@ -4,15 +4,15 @@
   vars:
     topics: linux,shell,ansible
   tags:
-    - ansible
-    - roboshop
-    - 140
+   - ansible
+   - roboshop
+   - 140
 
   tasks:
-    - name: first function
-      ansible.builtin.debug:
-        msg: "Hi vinod ,{{ NAME_OF_FUNCTION | default('Good morning') }}"
-
-    - name: ansible string to list conversion
-      ansible.builtin.debug:
-        msg: "{{ topics | split(',') }}"
+  - name: first function
+    ansible.builtin.debug:
+      msg: "Hi vinod ,{{ NAME_OF_FUNCTION | default(' Good morning ') }}
+  
+  - name: ansible string to list conversion
+    ansible.builtin.debug:
+      msg: "{{ topics | split(',') }}"
