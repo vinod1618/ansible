@@ -4,9 +4,9 @@
   vars:
     topics: linux,shell,ansible
   tags:
-   name: ansible
-   project: roboshop
-   duration: 140
+  - ansible
+  - roboshop
+  - 140
 
   tasks:
   - name: first function
