@@ -3,6 +3,8 @@
   connection: local
   vars:
     topics: linux,shell,ansible
+    course: "devsecops with aws"
+    UPPER_WORD: "DEVOPS WITH AWS"
     tags_map:
      ansible: ansible
      project: roboshop
@@ -47,3 +49,11 @@
   - name: convert yaml to json
     ansible.builtin.debug:
       msg: "{{ student_yaml | to_nice_json }}"
+    
+  - name: convert to uppercase
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"
+
+  - name: convert to lower case
+    ansible.builtin.debug:
+      msg: " {{ UPPER_WORD | lower }} "
