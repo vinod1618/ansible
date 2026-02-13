@@ -46,4 +46,4 @@
 
   - name: convert yaml to json
     ansible.builtin.debug:
-      msg: "{{ student_yaml | to_nice_json }}"
+      msg: "{{ student.yaml | to_nice_json }}"
