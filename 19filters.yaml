@@ -5,6 +5,7 @@
     topics: linux,shell,ansible
     course: "devsecops with aws"
     UPPER_WORD: "DEVOPS WITH AWS"
+    my_ip: 222.464.787.99
     tags_map:
      ansible: ansible
      project: roboshop
@@ -57,3 +58,7 @@
   - name: convert to lower case
     ansible.builtin.debug:
       msg: " {{ UPPER_WORD | lower }} "
+
+  - name: checking the valid ipv4 or not
+    ansible.builtin.debug:
+      msg: "{{ my_ip | ansible.utils.ipv4 }}"
