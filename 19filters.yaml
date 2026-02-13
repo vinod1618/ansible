@@ -5,7 +5,7 @@
     topics: linux,shell,ansible
     course: "devsecops with aws"
     UPPER_WORD: "DEVOPS WITH AWS"
-    my_ip: 222.464.787.99
+    my_ip: 222.44.78.99
     tags_map:
      ansible: ansible
      project: roboshop
