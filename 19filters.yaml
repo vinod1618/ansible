@@ -3,16 +3,20 @@
   connection: local
   vars:
     topics: linux,shell,ansible
-  tags:
-   - ansible
-   - roboshop
-   - 140
+    tags:
+     ansible: ansible
+     project: roboshop
+     duration: 140
 
   tasks:
   - name: first function
     ansible.builtin.debug:
       msg: "Hi vinod ,{{ NAME_OF_FUNCTION | default(' Good morning ') }}"
   
+  - name: ansible string to list conversion
+    ansible.builtin.debug:
+      msg: "{{ topics | split(',') }}"
+
   - name: ansible string to list conversion
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
