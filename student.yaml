@@ -1,0 +1,32 @@
+-student:
+  - name: vinod
+    DOB: 2001
+    mobilenumber: 1234567890
+    adddress:
+    - flatnumber: 100
+      street: "gandhi nagar"
+      city: gannavaram
+      state: andrapradesh
+      type: perm
+    
+    - flatnumber: 100
+      street: "gandhi nagar"
+      city: gannavaram
+      state: andrapradesh
+      type: current
+
+  - name: suresh
+    DOB: 2001
+    mobilenumber: 1234567890
+    adddress:
+    - flatnumber: 100
+      street: "gandhi nagar"
+      city: gannavaram
+      state: andrapradesh
+      type: perm
+    
+    - flatnumber: 100
+      street: "gandhi nagar"
+      city: gannavaram
+      state: andrapradesh
+      type: current
