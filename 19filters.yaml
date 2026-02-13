@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: linux,shell,ansible
-    tags:
+    tags_list:
      ansible: ansible
      project: roboshop
      duration: 140
@@ -19,4 +19,4 @@
 
   - name: ansible map to list conversion
     ansible.builtin.debug:
-      msg: "{{ tags | dict2items }}"
+      msg: "{{ tags_list | dict2items }}"
