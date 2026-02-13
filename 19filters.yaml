@@ -2,17 +2,17 @@
   hosts: local
   connection: local
   vars:
-    topics: linuc,shell,ansible
+    topics: linux,shell,ansible
 
   tasks:
   - name: first function
     ansible.builtin.debug:
       msg: "Hi vinod ,{{ NAME_OF_FUNCTION | default(' Good morning ') }}"
 
-  tags:
-    name: ansible
-    project: roboshop
-    duration: 140
+    tags:
+      name: ansible
+      project: roboshop
+      duration: 140
   
   - name: ansible string to list conversion
     ansible.builtin.debug:
