@@ -17,6 +17,6 @@
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
 
-  - name: ansible string to list conversion
+  - name: ansible map to list conversion
     ansible.builtin.debug:
-      msg: "{{ topics | split(',') }}"
+      msg: "{{ tags | dict2items }}"
