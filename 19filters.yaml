@@ -8,7 +8,7 @@
      project: roboshop
      duration: 140
     
-    tags_list:
+    tags_list: [
         {
             "key": "ansible",
             "value": "ansible"
@@ -21,6 +21,7 @@
             "key": "duration",
             "value": 140
         }
+    ]
 
   tasks:
   - name: first function
